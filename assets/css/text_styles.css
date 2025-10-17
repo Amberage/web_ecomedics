@@ -1,0 +1,60 @@
+.ecomedics_bold {
+  color: var(--red) !important;
+  font-weight: bolder;
+}
+
+.ixtapaluca_bold {
+  color: var(--blue) !important;
+  font-weight: bolder;
+}
+
+.red_bold {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.blue_bold {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.valores ul {
+  padding-left: 4rem;
+}
+
+.valores p {
+  margin-left: 0px !important;
+  margin-bottom: 0rem !important;
+}
+
+.valores_2 {
+  justify-content: center;
+}
+
+.valor_individual {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.valor_individual strong {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: large;
+}
+
+.valor_individual p {
+  margin-left: 0px !important;
+  margin-top: 1rem;
+}
+
+.line {
+    background-color: var(--red);
+    width: 120px;
+    height: 3px;
+    margin: 0 auto;
+}
+
+
+.hashtag {
+    color: var(--red);
+}
