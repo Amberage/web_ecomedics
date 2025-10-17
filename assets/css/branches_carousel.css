@@ -1,0 +1,44 @@
+/*. Carousel */
+.branches_carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.branches_carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.branches_carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 10px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.branches_carousel-btn.prev {
+  left: 10px;
+}
+.branches_carousel-btn.next {
+  right: 10px;
+}
+
+.branches_carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .branches_carousel-btn {
+    font-size: 1.5rem;
+    padding: 5px 8px;
+  }
+}

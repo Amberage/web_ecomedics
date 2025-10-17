@@ -34,6 +34,7 @@
 .valor_individual {
   text-align: center;
   margin-top: 40px;
+  padding: 20px;
 }
 
 .valor_individual strong {
@@ -48,13 +49,23 @@
 }
 
 .line {
-    background-color: var(--red);
-    width: 120px;
-    height: 3px;
-    margin: 0 auto;
+  background-color: var(--red);
+  width: 120px;
+  height: 3px;
+  margin: 0 auto;
 }
 
-
 .hashtag {
-    color: var(--red);
+  color: var(--red);
+}
+
+/** Services */
+
+.services ul {
+  margin-left: 1rem;
+  color: white;
+}
+
+.services img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }

@@ -5,61 +5,62 @@
 @import url("all.min.css");
 @import url("animations.css");
 @import url("text_styles.css");
+@import url("branches_carousel.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
-
 :root {
-    --white: #fff;
-    --black_text: #212529;
-    --blue: #023D92;
-    --red: #FF171E;
-    --green_whatsapp: #25D366;
+  --white: #fff;
+  --black_text: #212529;
+  --blue: #023d92;
+  --red: #ff171e;
+  --green_whatsapp: #25d366;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 /*!  header area start here  */
 
 /*!  navigation menu start here  */
-.header .navbar{
-    box-shadow: 3px 4px 13px rgb(209, 209, 211);
+.header .navbar {
+  box-shadow: 3px 4px 13px rgb(209, 209, 211);
 }
-.header .navbar .logo a{
-    text-decoration: none;
-    color:#000;
-    transition: 0.2s;
+.header .navbar .logo a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
 }
-.header .navbar .logo a span{
-    color: var(--blue);
+.header .navbar .logo a span {
+  color: var(--blue);
 }
 
 .logo img {
-    width: 154px;
-    height: 38px;
+  width: 154px;
+  height: 38px;
 }
 
 .header .navbar .logo a:hover {
-    color: var(--blue);
+  color: var(--blue);
 }
-.header .navbar-nav .nav-item .nav-link{
-    font-size: 18px;
-    color:#000;
-    padding: 10px 17px;
-    transition: all 0.3s ease-out ;
+.header .navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  color: var(--blue);
+  font-weight: 500;
+  padding: 10px 17px;
+  transition: all 0.3s ease-out;
 }
-.header .navbar-nav .nav-item .nav-link:hover{
-    color: var(--blue);
+.header .navbar-nav .nav-item .nav-link:hover {
+  color: var(--red);
+  animation: scale 2s infinite;
 }
-.header nav.sticky{
-    background-color: #21B573;
+.header nav.sticky {
+  background-color: #21b573;
 }
 
 /*!  navigation menu ends here  */
@@ -67,423 +68,431 @@ body {
 /*!  header area neds here  */
 
 /*!  Home Page Secetion Start Here  */
-.home{
-    padding-bottom: 50px;
+.home {
+  padding-bottom: 50px;
 }
-.home .content-area{
-    margin-top: 150px;
+.home .content-area {
+  margin-top: 150px;
 }
-.home .content-area h1 span{
-    color: var(--blue);
+.home .content-area h1 span {
+  color: var(--blue);
 }
 .home .content-area .btn-style {
-    background-color:  var(--blue);
-    padding: 6px 25px;
-    text-transform: capitalize;
-    color:white;
-    font-size: 17px;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 0 #fff;
-    transition: ease-out 0.4s;
+  background-color: var(--blue);
+  padding: 6px 25px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 17px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: ease-out 0.4s;
 }
-.home .content-area .btn-style:hover{
-    box-shadow: inset 300px 0 0 0 var(--red);
-    color:white;
+.home .content-area .btn-style:hover {
+  box-shadow: inset 300px 0 0 0 var(--red);
+  color: white;
 }
 /*!  Home Page Section Ends Here  */
 
 /*!  About Section Start Here  */
-.about{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: #EFEFEF;
-    margin-bottom: 50px;
+.about {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #efefef;
+  margin-bottom: 50px;
+  background-image: url("/assets/images/logo_bg_blanco.png");
+  background-size: 20%;
+  background-attachment: fixed;
 }
-.about .about-content{
-    margin-top: 110px;
+.about .about-content {
+  margin-top: 110px;
 }
 .about .heading {
-    text-align: center;
-    font-weight: 650;
-    padding-bottom: 15px;
-    margin: 0px;
-    padding: 0px;
-    color:  var(--blue);
+  text-align: center;
+  font-weight: 650;
+  padding-bottom: 15px;
+  margin: 0px;
+  padding: 0px;
+  color: var(--blue);
 }
-.about hr{
-    width: 70px;
-    border-width: 4px;
-    border-color:#263238;
-    margin: auto;
-    border-radius: 2px;
-    padding: 3px 0px;
-    margin-top: 4px;
-    margin-bottom: 15px;
-
+.about hr {
+  width: 70px;
+  border-width: 4px;
+  border-color: var(--red);
+  margin: auto;
+  border-radius: 2px;
+  padding: 3px 0px;
+  margin-top: 4px;
+  margin-bottom: 15px;
 }
-.about .about-content .box p{
-    margin-left: 45px;
+.about .about-content .box p {
+  margin-left: 45px;
 }
-.about .about-content .box .fa-procedures{
-    display: initial;
-    font-size:35px;
+.about .about-content .box .fa-procedures {
+  display: initial;
+  font-size: 35px;
 }
 /*!  About Section Ends Here  */
 
 /*! ****** Facility Section Start Here  *******/
 
 .services {
-    padding-bottom: 50px;
+  margin-top: -50px;
+  background-color: var(--blue);
+  background-image: url("/assets/images/logo_bg_azul.png");
+  background-size: 20%;
+  background-attachment: fixed;
 }
 .services .heading {
-    text-align: center;
-    font-weight: 650;
-    padding-bottom: 15px;
-    margin: 0px;
-    padding: 0px;
-    color:  var(--blue);
+  text-align: center;
+  font-weight: 650;
+  padding-bottom: 15px;
+  margin: 0px;
+  padding: 0px;
+  color: var(--blue);
 }
-.services hr{
-    width: 70px;
-    border-width: 4px;
-    border-color:#263238;
-    margin: auto;
-    border-radius: 2px;
-    padding: 3px 0px;
-    margin-top: 4px;
+.services hr {
+  width: 160px;
+  border-width: 4px;
+  border-color: var(--white);
+  margin: auto;
+  border-radius: 2px;
+  padding: 3px 0px;
+  margin-top: 4px;
+}
 
+.services h1 {
+    color: var(--red) !important;
+    /*text-shadow: 3px 3px 15px var(--red);*/
 }
-.services .box{
-    margin-top: 10px;
-    overflow: hidden;
-    cursor: pointer;
+
+.services h3 {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
 }
-.services .box img{
-    transition: all 0.5s linear;
+
+.services .box {
+  margin-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.services .box:hover img{
-    transform: scale(1.2);
+.services .box img {
+  transition: all 0.5s linear;
+}
+.services .box:hover img {
+  transform: scale(1.2);
 }
 /*! *** Facility Section Ends Here  *******/
 
 /*! ***** Review Section Start Here  ******/
 
-.review{
-    background-color: #222E34;
-    padding-bottom: 50px;
+.review {
+  background-color: #222e34;
+  padding-bottom: 50px;
 }
-.review hr{
-    width: 70px;
-    border-width: 4px;
-    border-color: var(--blue);
-    margin: auto;
-    border-radius: 2px;
-    padding: 3px 0px;
-    margin-top: 4px;
-
+.review hr {
+  width: 160px;
+  border-width: 4px;
+  border-color: var(--red);
+  margin: auto;
+  border-radius: 2px;
+  padding: 3px 0px;
+  margin-top: 4px;
 }
 .review .card {
-    position: relative;
-    margin-top: 70px;
+  position: relative;
+  margin-top: 70px;
 }
-.review .card img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid  var(--blue);
-    position: absolute;
-    left: 100px;
-    top: -40px;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgb(155, 151, 151);
-   
+.review .card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  position: absolute;
+  left: 100px;
+  top: -40px;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgb(155, 151, 151);
 }
-.review .card:hover .card-body{
-    background-color:  var(--blue);
-    color:white;
-    cursor: pointer;
+.review .card:hover .card-body {
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
 }
-.review .card:hover .card-body h5{
-    color:white ;
+.review .card:hover .card-body h5 {
+  color: white;
 }
-.review .card .card-body{
+.review .card .card-body {
   padding-top: 40px;
-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.review .card .card-body p{
-    letter-spacing: 1px;
+.review .card .card-body p {
+  letter-spacing: 1px;
 }
-.review .card .card-body h5{
-    color:  var(--blue);
-    transition: all 0.5s ease;
-    text-transform: capitalize;
+.review .card .card-body h5 {
+  color: var(--blue);
+  transition: all 0.5s ease;
+  text-transform: capitalize;
 }
-.review .card .card-body span{
-    font-size:14px ;
+.review .card .card-body span {
+  font-size: 14px;
 }
 /*! ***** Review Section Ends Here  ******/
 
 /*! ***** Counter Section Starts Here  ******/
-.counter .box{
-    text-align: center;
-    margin: 40px 0px;
+.counter .box {
+  text-align: center;
+  margin: 40px 0px;
 }
-.counter .box .fa-hospital,.fa-users,.fa-smile,.fa-procedures{
-    display: block;
-   margin: auto;
-   font-size: 40px;
-   color: var(--blue);
-   margin-bottom: 10px;
+.counter .box .fa-hospital,
+.fa-users,
+.fa-smile,
+.fa-procedures {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+  color: var(--blue);
+  margin-bottom: 10px;
 }
 
-.counter .box span{
-    font-size: 25px;
-    
+.counter .box span {
+  font-size: 25px;
 }
-.counter .box h3{
-    font-size: 16px;
-    text-transform: capitalize;
-    margin-top: 10px;
-    color: #3f3d3d;
+.counter .box h3 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  color: #3f3d3d;
 }
 /*! ***** Counter Section Ends Here  ******/
 
-/*! ********** Post Section Starts Here  ***********/
-.post {
-    margin-top: 50px;
-    padding-bottom: 50px;
+/*! ********** branches Section Starts Here  ***********/
+.branches {
+  padding-bottom: 50px;
+  background-color: #efefef;
+  background-image: url("/assets/images/logo_bg_blanco.png");
+  background-size: 20%;
+  background-attachment: fixed;
 }
-.post .card{
-    box-shadow:  5px 5px 20px rgb(202, 201, 201);
+.branches .card {
+  box-shadow: 5px 5px 20px rgb(202, 201, 201);
 }
-.post .heading {
-    text-align: center;
-    font-weight: 650;
-    padding-bottom: 15px;
-    margin: 0px;
-    padding: 0px;
-    color:  var(--blue);
+.branches .heading {
+  text-align: center;
+  font-weight: 650;
+  padding-bottom: 15px;
+  margin: 0px;
+  padding: 0px;
+  color: var(--blue);
+  padding-top: 3rem;
 }
-.post hr{
-    width: 70px;
-    border-width: 4px;
-    border-color:#263238;
-    margin: auto;
-    border-radius: 2px;
-    padding: 3px 0px;
-    margin-top: 4px;
-    margin-bottom: 15px;
+.branches hr {
+  width: 160px;
+  border-width: 4px;
+  border-color: var(--red);
+  margin: auto;
+  border-radius: 2px;
+  padding: 3px 0px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+.branches .card:hover .card-body a h3 {
+  cursor: pointer;
+}
+.branches .card .card-body a {
+  text-decoration: none;
+}
+.branches .card .card-body a h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-top: 5px;
+  color: var(--red);
+  font-weight: bold;
+}
+.branches .card .card-body .btn-style {
+  padding: 6px 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 0 #3f3d3d;
+  transition: ease-out 0.4s;
+  border-color: #263238;
+}
 
+.branches .btn-style i {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: x-large;
 }
-.post .card:hover .card-body a h3{
-    cursor: pointer;
+.branches .card .card-body .btns_branches {
+  text-align: center;
 }
-.post .card .card-body a{
-    text-decoration:none;
+
+.branches .card .card-body .btns_branches button {
+  margin: 5px;
 }
-.post .card .card-body a h3{
-    text-transform: capitalize;
-    font-size: 25px;
-    margin-top: 5px;
-    color: var(--red);
+
+.branches .card .card-body .whatsapp {
+  background-color: var(--blue);
+  color: white;
+
+  &:hover {
+    box-shadow: inset 300px 0 0 0 var(--green_whatsapp);
+    color: white;
+    border-color: #fff;
     font-weight: bold;
-    
-}
-.post .card .card-body .btn-style {
-    padding: 6px 20px;
-    font-size: 15px;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 0 #3f3d3d;
-    transition: ease-out 0.4s;
-    border-color:#263238;
+  }
 }
 
-.post .btn-style i {
+.branches .card .card-body .maps {
+  background-color: var(--blue);
+  color: white;
+
+  &:hover {
+    box-shadow: inset 300px 0 0 0 var(--red);
     color: white;
-    margin-right: .5rem;
-    font-size: x-large;
-}
-.post .card .card-body .btns_branches {
-    text-align: center;
+    border-color: #fff;
+    font-weight: bold;
+  }
 }
 
-.post .card .card-body .btns_branches button {
-    margin: 5px;
-}
-
-
-.post .card .card-body .whatsapp {
-    background-color:  var(--blue);
-    color: white;
-
-
-    &:hover {
-        box-shadow: inset 300px 0 0 0 var(--green_whatsapp);
-        color:white;
-        border-color: #fff;
-        font-weight: bold;
-    }
-}
-
-.post .card .card-body .maps {
-    background-color:  var(--blue);
-    color: white;
-
-
-    &:hover {
-        box-shadow: inset 300px 0 0 0 var(--red);
-        color:white;
-        border-color: #fff;
-        font-weight: bold;
-    }
-}
-
-/*! ********** Post Section Ends Here  ***********/
+/*! ********** branches Section Ends Here  ***********/
 
 /*! ************ Footer Section Start Here  *************/
 .footer {
-    padding-bottom:10px;
-    background-color: var(--blue);
-    padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: var(--blue);
+  padding-top: 25px;
 }
 
 .footer img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__contactInfo ul {
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer__contactInfo i {
-    color: var(--red);
-    margin-right: 10px;
+  color: var(--red);
+  margin-right: 10px;
 }
 
 .footer__contactInfo span {
-    padding: auto;
+  padding: auto;
 }
 
 .footer .row {
-    margin: auto;
+  margin: auto;
 }
 
-.footer .box a{
-    text-decoration: none;
-    font-size: 30px;
-    color:white;
+.footer .box a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
 }
 .footer .box ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
-.footer .box ul li a{
-    font-size: 18px;
-  
+.footer .box ul li a {
+  font-size: 18px;
 }
 .footer .box ul li a:hover {
-    color: var(--blue);
+  color: var(--blue);
 }
-.footer .box a span{
-    color: var(--blue);
+.footer .box a span {
+  color: var(--blue);
 }
 
 .footer__bar {
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: var(--white);
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--white);
 
-    text-align: center;
-    /*!  background-image: url(/assets/images/footerBar.svg); */
-    background-color: var(--red);
-    background-size: cover;
-    background-repeat: repeat-x;
+  text-align: center;
+  /*!  background-image: url(/assets/images/footerBar.svg); */
+  background-color: var(--red);
+  background-size: cover;
+  background-repeat: repeat-x;
 }
 /*! ************ Footer Section Ends Here  *************/
 
-
 /*!  scroll button start here  */
-.to-top a{
-    padding: 5px 10px;
-    background: var(--green_whatsapp);
-    display: inline-block;
-    font-size: 15px;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 5px 5px 5px 5px;
-    color:white;
-    transition: 0.4s;
-    box-shadow: 0px 1px 5px gainsboro;
+.to-top a {
+  padding: 5px 10px;
+  background: var(--green_whatsapp);
+  display: inline-block;
+  font-size: 15px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0px 1px 5px gainsboro;
 }
-.to-top a:hover{
-    background-color: #fff;
-	color:#fff;
-    background-color:#3f3d3d;
-    
+.to-top a:hover {
+  background-color: #fff;
+  color: #fff;
+  background-color: #3f3d3d;
 }
 
 /*! ********* Responsive Design Start Here  **********/
 
-@media only screen and (max-width:991px) and (max-width:768px){
-    .review .card {
-        position: relative;
-        margin-top: 70px;
-    }
-    .review .card img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 2px solid  var(--blue);
-        position: absolute;
-        left: 122px ;
-        top: -40px;
-        background-color: white;
-        box-shadow: 2px 2px 5px rgb(58, 24, 24);
-       
-    }
-    
+@media only screen and (max-width: 991px) and (max-width: 768px) {
+  .review .card {
+    position: relative;
+    margin-top: 70px;
+  }
+  .review .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    position: absolute;
+    left: 122px;
+    top: -40px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(58, 24, 24);
+  }
 }
 
-@media only screen and (max-width:767px){
-    .review .card {
-        position: relative;
-        margin-top: 70px;
-    }
-    .review .card img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 2px solid  var(--blue);
-        position: absolute;
-        left: 200px ;
-        top: -40px;
-        background-color: white;
-        box-shadow: 2px 2px 5px rgb(58, 24, 24);
-       
-    }
-    .review .card .card-body {
-        text-align: center;
-    }
-  
+@media only screen and (max-width: 767px) {
+  .review .card {
+    position: relative;
+    margin-top: 70px;
+  }
+  .review .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    position: absolute;
+    left: 200px;
+    top: -40px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(58, 24, 24);
+  }
+  .review .card .card-body {
+    text-align: center;
+  }
 }
-@media only screen and (max-width:492px){
-    .review .card {
-        position: relative;
-        margin-top: 70px;
-    }
-    .review .card img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 2px solid  var(--blue);
-        position: absolute;
-        left: 120px ;
-        top: -40px;
-        background-color: white;
-        box-shadow: 2px 2px 5px rgb(58, 24, 24);
-       
-    }
-   
+@media only screen and (max-width: 492px) {
+  .review .card {
+    position: relative;
+    margin-top: 70px;
+  }
+  .review .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    position: absolute;
+    left: 120px;
+    top: -40px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(58, 24, 24);
+  }
 }
