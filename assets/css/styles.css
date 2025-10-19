@@ -410,6 +410,7 @@ body {
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--white);
+  font-weight: bold;
 
   text-align: center;
   /*!  background-image: url(/assets/images/footerBar.svg); */
@@ -421,23 +422,38 @@ body {
 
 /*!  scroll button start here  */
 .to-top a {
-  padding: 5px 10px;
+  padding: 7px 15px;
   background: var(--green_whatsapp);
   display: inline-block;
-  font-size: 15px;
+  font-size: 35px;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
-  border-radius: 5px 5px 5px 5px;
+  right: 2rem;
+  bottom: 1rem;
+  border-radius: 50px;
   color: white;
   transition: 0.4s;
-  box-shadow: 0px 1px 5px gainsboro;
 }
 .to-top a:hover {
   background-color: #fff;
   color: #fff;
   background-color: #3f3d3d;
+  animation: scale 2s infinite;
 }
+
+.whatsapp__notification{
+  color: var(--white);
+  background-color: var(--red);
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 6px 9px;
+  border-radius: 50px;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index: 10000;
+}
+
 
 /*! ********* Responsive Design Start Here  **********/
 

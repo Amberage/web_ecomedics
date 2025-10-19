@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const AUTO_SLIDE_TIME = 10000
+    
     const row = document.querySelector('#branches .row');
     const cards = Array.from(row.children);
 
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para reiniciar el contador del auto-slide
     function resetAutoSlide() {
         clearInterval(autoSlide);
-        autoSlide = setInterval(() => nextButton.click(), 5000);
+        autoSlide = setInterval(() => nextButton.click(), AUTO_SLIDE_TIME);
     }
 
     // Botones con reinicio de contador
@@ -76,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Auto-slide cada 5s
-    let autoSlide = setInterval(() => nextButton.click(), 5000);
+    let autoSlide = setInterval(() => nextButton.click(), AUTO_SLIDE_TIME);
 
     // Recalcular cuando cambia el tamaño de pantalla
     window.addEventListener('resize', () => {

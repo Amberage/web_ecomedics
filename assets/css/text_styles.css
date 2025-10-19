@@ -1,3 +1,4 @@
+/*@ Generales  */
 .ecomedics_bold {
   color: var(--red) !important;
   font-weight: bolder;
@@ -18,6 +19,7 @@
   font-weight: bold;
 }
 
+/*@ About Us */
 .valores ul {
   padding-left: 4rem;
 }
@@ -48,19 +50,18 @@
   margin-top: 1rem;
 }
 
-.line {
+.valores__line {
   background-color: var(--red);
   width: 120px;
   height: 3px;
   margin: 0 auto;
 }
-
+/*@ IxtapalucaEsEcomedics  */
 .hashtag {
   color: var(--red);
 }
 
-/** Services */
-
+/*@ Services */
 .services ul {
   margin-left: 1rem;
   color: white;
@@ -68,4 +69,25 @@
 
 .services img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*@ Branches  */
+.branches__numbers {
+  color: var(--red);
+}
+
+/*@ Footer  */
+.footer__rrss {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer__rrss i {
+  color: var(--white);
+  font-size: 2rem;
+  margin: 0 10px 0 10px;
+
+  &:hover {
+    animation: mid_scale 2s infinite;
+  }
 }
