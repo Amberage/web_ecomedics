@@ -72,7 +72,7 @@ body {
   padding-bottom: 50px;
 }
 .home .content-area {
-  margin-top: 150px;
+  margin-top: 110px;
 }
 .home .content-area h1 span {
   color: var(--blue);
@@ -114,8 +114,14 @@ body {
   padding: 0px;
   color: var(--blue);
 }
+
+.about h1 i {
+  color: var(--blue);
+  padding-right: 1rem;
+}
+
 .about hr {
-  width: 70px;
+  width: 160px;
   border-width: 4px;
   border-color: var(--red);
   margin: auto;
@@ -153,7 +159,7 @@ body {
 .services hr {
   width: 160px;
   border-width: 4px;
-  border-color: var(--white);
+  border-color: var(--red);
   margin: auto;
   border-radius: 2px;
   padding: 3px 0px;
@@ -161,8 +167,12 @@ body {
 }
 
 .services h1 {
-    color: var(--red) !important;
-    /*text-shadow: 3px 3px 15px var(--red);*/
+  color: var(--white) !important;
+}
+
+.services h1 i {
+  color: var(--white);
+  padding-right: 1rem;
 }
 
 .services h3 {
@@ -185,13 +195,20 @@ body {
 }
 /*! *** Facility Section Ends Here  *******/
 
-/*! ***** Review Section Start Here  ******/
+/*! ***** comunity Section Start Here  ******/
 
-.review {
+.comunity {
   background-color: #222e34;
   padding-bottom: 50px;
+  background-image: url("/assets/images/logo_bg_negro.png");
+  background-size: 20%;
+  background-attachment: fixed;
 }
-.review hr {
+.comunity h1 {
+  color: var(--white);
+}
+
+.comunity hr {
   width: 160px;
   border-width: 4px;
   border-color: var(--red);
@@ -199,12 +216,13 @@ body {
   border-radius: 2px;
   padding: 3px 0px;
   margin-top: 4px;
+  margin-bottom: 2rem;
 }
-.review .card {
+.comunity .card {
   position: relative;
   margin-top: 70px;
 }
-.review .card img {
+.comunity .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -215,30 +233,30 @@ body {
   background-color: white;
   box-shadow: 2px 2px 4px rgb(155, 151, 151);
 }
-.review .card:hover .card-body {
+.comunity .card:hover .card-body {
   background-color: var(--blue);
   color: white;
   cursor: pointer;
 }
-.review .card:hover .card-body h5 {
+.comunity .card:hover .card-body h5 {
   color: white;
 }
-.review .card .card-body {
+.comunity .card .card-body {
   padding-top: 40px;
   transition: all 0.5s ease;
 }
-.review .card .card-body p {
+.comunity .card .card-body p {
   letter-spacing: 1px;
 }
-.review .card .card-body h5 {
+.comunity .card .card-body h5 {
   color: var(--blue);
   transition: all 0.5s ease;
   text-transform: capitalize;
 }
-.review .card .card-body span {
+.comunity .card .card-body span {
   font-size: 14px;
 }
-/*! ***** Review Section Ends Here  ******/
+/*! ***** comunity Section Ends Here  ******/
 
 /*! ***** Counter Section Starts Here  ******/
 .counter .box {
@@ -287,6 +305,12 @@ body {
   color: var(--blue);
   padding-top: 3rem;
 }
+
+.branches h1 i {
+  color: var(--blue);
+  padding-right: 1rem;
+}
+
 .branches hr {
   width: 160px;
   border-width: 4px;
@@ -440,7 +464,7 @@ body {
   animation: scale 2s infinite;
 }
 
-.whatsapp__notification{
+.whatsapp__notification {
   color: var(--white);
   background-color: var(--red);
   font-size: 12px;
@@ -454,15 +478,14 @@ body {
   z-index: 10000;
 }
 
-
 /*! ********* Responsive Design Start Here  **********/
 
 @media only screen and (max-width: 991px) and (max-width: 768px) {
-  .review .card {
+  .comunity .card {
     position: relative;
     margin-top: 70px;
   }
-  .review .card img {
+  .comunity .card img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -476,11 +499,11 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .review .card {
+  .comunity .card {
     position: relative;
     margin-top: 70px;
   }
-  .review .card img {
+  .comunity .card img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -491,16 +514,47 @@ body {
     background-color: white;
     box-shadow: 2px 2px 5px rgb(58, 24, 24);
   }
-  .review .card .card-body {
+  .comunity .card .card-body {
+    text-align: center;
+  }
+
+  .to-top a {
+    padding: 3px 10px;
+    font-size: 20px;
+    right: 1rem;
+  }
+  .to-top a:hover {
+    background-color: var(--green_whatsapp);
+    color: #fff;
+    animation: none;
+  }
+
+  .whatsapp__notification {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 2px 6px;
+  }
+
+  .about .about-content .box p {
+    margin: 10px 15px 10px;
+  }
+
+  .individual_value {
+    margin-top: 10px;
+  }
+
+  .welcome_text {
+    margin-top: 1rem !important;
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 492px) {
-  .review .card {
+  .comunity .card {
     position: relative;
     margin-top: 70px;
   }
-  .review .card img {
+  .comunity .card img {
     width: 80px;
     height: 80px;
     border-radius: 50%;

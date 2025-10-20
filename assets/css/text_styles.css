@@ -1,3 +1,9 @@
+/*@ Navbar */
+.mobile_nav_button {
+  color: var(--blue) !important;
+  font-size: 20px;
+}
+
 /*@ Generales  */
 .ecomedics_bold {
   color: var(--red) !important;
@@ -20,48 +26,55 @@
 }
 
 /*@ About Us */
-.valores ul {
-  padding-left: 4rem;
+.about-content h3 {
+  text-align: center;
 }
 
-.valores p {
-  margin-left: 0px !important;
-  margin-bottom: 0rem !important;
+.about-content .values_mv {
+  text-align: center;
 }
 
-.valores_2 {
-  justify-content: center;
+.about-content h3 i {
+  color: var(--red);
 }
 
-.valor_individual {
+.about-content h3 span {
+  color: var(--blue);
+  font-weight: bolder;
+}
+
+.values {
+  margin-top: -5rem;
+}
+
+.individual_value {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
 }
 
-.valor_individual strong {
+.individual_value strong {
   color: var(--blue);
   font-weight: bold;
   font-size: large;
 }
 
-.valor_individual p {
+.individual_value p {
   margin-left: 0px !important;
   margin-top: 1rem;
 }
 
-.valores__line {
+.hr_value {
   background-color: var(--red);
   width: 120px;
   height: 3px;
   margin: 0 auto;
 }
-/*@ IxtapalucaEsEcomedics  */
-.hashtag {
-  color: var(--red);
-}
 
 /*@ Services */
+.services .container {
+  padding-top: 2rem;
+}
 .services ul {
   margin-left: 1rem;
   color: white;
@@ -72,7 +85,7 @@
 }
 
 /*@ Branches  */
-.branches__numbers {
+.branches_card_numbers {
   color: var(--red);
 }
 
@@ -89,5 +102,21 @@
 
   &:hover {
     animation: mid_scale 2s infinite;
+  }
+}
+
+/*@ Responsive  */
+@media only screen and (max-width: 767px) {
+  .footer .container .box h3 {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .comunity h1 {
+    font-size: 18px;
+  }
+
+  .about-content .values_mv {
+    text-align: left;
   }
 }
