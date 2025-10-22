@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const promosSection = document.getElementById('promos');
+    const welcomeSection = document.getElementById('welcome');
     const promoImages = promosSection.querySelectorAll('img');
     const breakpoint = 767;
     let currentMode = null;
@@ -36,6 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Si no hay imágenes -> ocultar sección
         if (total === 0) {
             promosSection.style.display = 'none';
+
+            if (window.innerWidth <= 767) {
+                welcomeSection.style.marginTop = '3rem';
+            }
+            
             return;
         }
 

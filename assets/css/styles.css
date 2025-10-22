@@ -8,6 +8,7 @@
 @import url("branches_carousel.css");
 @import url("campaigns_carousel.css");
 @import url("promotions_banner.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
@@ -25,7 +26,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: white;
+  background-color: #222E34;
 }
 /*!  header area start here  */
 
@@ -33,6 +34,7 @@ body {
 /* .header .navbar {
   box-shadow: 3px 4px 13px rgb(209, 209, 211);
 } */
+
 
 .header .navbar .logo a {
   text-decoration: none;
@@ -80,8 +82,9 @@ body {
 }
 
 .home .content-area {
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
+
 .home .content-area h1 span {
   color: var(--blue);
 }
@@ -596,6 +599,7 @@ body {
   .home .row img {
     margin-top: 1rem !important;
   }
+  
 }
 
 @media only screen and (max-width: 492px) {

@@ -21,13 +21,28 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 300);
 });
 
+//? Asignar espacio entre el navbar y el primer bloque.
 document.addEventListener('DOMContentLoaded', () => {
+    PRIMER_SECTION = '.promos'
     const navbar = document.querySelector('.fixed-top');
-    const promos = document.querySelector('.promos');
+    const promos = document.querySelector(PRIMER_SECTION);
     if (navbar && promos) {
         const navbarHeight = navbar.offsetHeight;
         promos.style.marginTop = `${navbarHeight}px`;
     }
+});
+
+//? Cerrar el menú movil cuando se selecciona una opción
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navigation');
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            bsCollapse.hide();
+        });
+    });
 });
 
 //? Agregar un movimiento menos brusco al moverse dentro de los #ids de la web

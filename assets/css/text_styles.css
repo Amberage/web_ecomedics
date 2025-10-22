@@ -138,6 +138,10 @@
   color: var(--red);
 }
 
+.branches_card_numbers a {
+  color: var(--red);
+}
+
 /*@ Footer  */
 .footer__rrss {
   text-align: center;

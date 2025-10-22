@@ -47,7 +47,7 @@ video {
     font-weight: 300;
     font-style: italic;
     position: absolute;
-    bottom: 25px !important;
+    bottom: 35px !important;
 }
 
 .card__hero {
@@ -99,6 +99,7 @@ video {
     display: flex;
     overflow: hidden;
     position: relative;
+    justify-content: center;
 }
 
 .campaigns__track {
@@ -147,4 +148,56 @@ video {
         font-size: x-small;
 
     }
+}
+
+
+.campaigns {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.campaigns__track {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.campaigns__slide {
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .campaigns__slide {
+        flex: 0 0 100%;
+    }
+}
+
+.campaigns__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--red);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.campaigns__control:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.campaigns__control.left {
+    left: 10px;
+}
+
+.campaigns__control.right {
+    right: 10px;
 }
