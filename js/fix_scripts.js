@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //? Asignar espacio entre el navbar y el primer bloque.
 document.addEventListener('DOMContentLoaded', () => {
-    PRIMER_SECTION = '.promos'
+    PRIMER_SECTION = '.promotions'
     const navbar = document.querySelector('.fixed-top');
     const promos = document.querySelector(PRIMER_SECTION);
     if (navbar && promos) {

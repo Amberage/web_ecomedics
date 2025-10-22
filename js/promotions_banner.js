@@ -1,111 +1,68 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const promosSection = document.getElementById('promos');
-    const welcomeSection = document.getElementById('welcome');
-    const promoImages = promosSection.querySelectorAll('img');
-    const breakpoint = 767;
-    let currentMode = null;
-    let autoSlideInterval = null;
-    const SLIDE_INTERVAL = 7000; // 7 segundos
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".promo-track");
+    if (!track) return; // Si no existe el contenedor, salir
 
-    // --- FUNCIONES DE RESPONSIVE ---
-    function getNewSrc(src, mode) {
-        return src.replace(/_mobile|_desktop/, `_${mode}`);
+    const images = Array.from(track.querySelectorAll("img"));
+    const prevBtn = document.querySelector(".promo-prev");
+    const nextBtn = document.querySelector(".promo-next");
+
+    // Si no hay imágenes, salir sin hacer nada
+    if (images.length === 0) return;
+
+    // Si hay solo una imagen, mostrarla y ocultar controles
+    if (images.length === 1) {
+        images[0].classList.add("active");
+        if (prevBtn) prevBtn.style.display = "none";
+        if (nextBtn) nextBtn.style.display = "none";
+        return;
     }
 
-    function updatePromoImages(force = false) {
-        const newMode = window.innerWidth > breakpoint ? 'desktop' : 'mobile';
-        if (!force && newMode === currentMode) return;
-        currentMode = newMode;
+    // Si hay más de una imagen, activar el carousel
+    let currentIndex = 0;
+    let autoSlideInterval;
 
-        promoImages.forEach(img => {
-            const currentSrc = img.getAttribute('src');
-            const newSrc = getNewSrc(currentSrc, newMode);
-            if (newSrc === currentSrc) return;
-
-            const tempImg = new Image();
-            tempImg.src = newSrc;
-            tempImg.onload = () => {
-                img.src = newSrc;
-            };
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
         });
     }
 
-    // --- FUNCIONES DEL SLIDER ---
-    function initSlider() {
-        const total = promoImages.length;
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
 
-        // Si no hay imágenes -> ocultar sección
-        if (total === 0) {
-            promosSection.style.display = 'none';
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
 
-            if (window.innerWidth <= 767) {
-                welcomeSection.style.marginTop = '3rem';
-            }
-            
-            return;
-        }
+    // Auto-slide cada 5s
+    function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideInterval = setInterval(nextImage, 5000);
+    }
 
-        // Si hay solo una imagen -> mostrarla sin controles
-        if (total === 1) {
-            promoImages[0].classList.add('active');
-            return;
-        }
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
 
-        // Hay varias imágenes -> crear controles
-        let currentIndex = 0;
-        promoImages[currentIndex].classList.add('active');
-
-        const leftBtn = document.createElement('button');
-        leftBtn.className = 'control left';
-        leftBtn.innerHTML = '&#10094;'; // ‹
-        promosSection.appendChild(leftBtn);
-
-        const rightBtn = document.createElement('button');
-        rightBtn.className = 'control right';
-        rightBtn.innerHTML = '&#10095;'; // ›
-        promosSection.appendChild(rightBtn);
-
-        function showSlide(index) {
-            promoImages.forEach((img, i) => {
-                img.classList.toggle('active', i === index);
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % total;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + total) % total;
-            showSlide(currentIndex);
-        }
-
-        leftBtn.addEventListener('click', () => {
-            prevSlide();
-            resetAutoSlide();
-        });
-
-        rightBtn.addEventListener('click', () => {
-            nextSlide();
-            resetAutoSlide();
-        });
-
-        // --- AUTO SLIDE ---
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(nextSlide, SLIDE_INTERVAL);
-        }
-
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
+    // Eventos
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+            nextImage();
             startAutoSlide();
-        }
-
-        startAutoSlide();
+        });
     }
 
-    // --- INICIALIZACIÓN ---
-    updatePromoImages(true);
-    initSlider();
-    window.addEventListener('resize', updatePromoImages);
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+            prevImage();
+            startAutoSlide();
+        });
+    }
+
+    // Inicializar
+    showImage(currentIndex);
+    startAutoSlide();
 });
