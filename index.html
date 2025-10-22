@@ -35,41 +35,67 @@
     <!--! ---------- HEADER-AREA ENDS HERE  ------------>
 
 
-    <!--! --------- HOME SECTION START HERE  ----------->
-    <section id="home" class="home">
-        <div class="container wow  fadeIn" data-wow-duration="1.5s">
-            <div class="row">
-                <div class="col-md-5">
-                    <img class="img-fluid" src="/assets/images/ai_doctores_home.webp" style="margin-top: 5rem;" width="100%" alt="home">
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <div class="content-area welcome_text">
-                        <h1><span class="ecomedics_bold">Ecomedic's</span> <span class="ixtapaluca_bold">Ixtapaluca</span></h1>
-                        <p style="font-weight: bold;">Cuidamos tu salud con la confianza que mereces.</p>
-                        <p>Tu bienestar es nuestra prioridad. En <span class="ecomedics_bold">Ecomedic's</span> <span class="ixtapaluca_bold">Ixtapaluca</span>, combinamos tecnología de punta para tus análisis clínicos, 
-                            rayos X y ultrasonidos, con la atención cálida y humana que te hace sentir seguro. Obtén resultados precisos y claros 
-                            para cuidar de ti y de los que más quieres.</p>
-                        <a href="#branches"><button class=" btn-style btn mt-3">Visítanos en Ixtapaluca</button></a>
+    <!--! ---------------- MAIN AREA START HERE  ------------------>
+    <main id="home">
+        <!--! --------- Promos Section HERE  ----------->
+        <section id="promos" class="promos">
+            <img src="/data/promociones/promo_1_mobile.png" alt="">
+            <img src="/data/promociones/promo_2_mobile.jpg" alt="">
+        </section>
+        <!--! --------- Promos Section HERE  ----------->
+
+        <!--! --------- HOME Section HERE  ----------->
+        <section class="home">
+            <div class="container wow fadeIn" data-wow-duration="1.5s">
+                <div class="row">
+        
+                    <div class="col-md-7">
+                        <div class="content-area welcome_text">
+                            <!-- <h1><span class="ecomedics_bold">Ecomedic's</span> <span class="ixtapaluca_bold">Ixtapaluca</span></h1> -->
+                            <h1><img src="/assets/images/logo_color_fondo_blanco.png" style="max-width: 100%; margin-bottom: 20px;" ></h1>
+                            <p style="font-weight: bold;">Tu laboratorio de confianza, cerca de ti.</p>
+                            <p>Tu bienestar es nuestra prioridad. En <span class="ecomedics_bold">Ecomedic's</span> <span class="ixtapaluca_bold">Ixtapaluca</span>, combinamos tecnología de punta para tus análisis clínicos,
+                                rayos X y ultrasonidos, con la atención cálida y humana que te hace sentir seguro. Obtén resultados precisos y claros
+                                para cuidar de ti y de los que más quieres.</p>
+                            <a href="#branches"><button class=" btn-style btn mt-1">Visítanos en Ixtapaluca</button></a>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-5 mt-2">
+                        <img class="img-fluid" src="/assets/images/ai_doctores_home.webp" style="margin-top: 5rem;" width="100%" alt="home">
                     </div>
                 </div>
             </div>
-        </div>
-        <span id="about"></span>
-    </section>
-    <!--! --------- HOME SECTION ENDS HERE  ----------->
+            <span id="about"></span>
+        </section>
+        <!--! --------- HOME Section HERE  ----------->
 
 
-    <!--! ---------------- MAIN AREA START HERE  ------------------>
-    <main>
-        
         <!--! ---- About Section Start here  ------>
         <section class="about">
             <div class="container">
                 <h1 class="heading wow fadeInLeft" data-wow-duration="2s"> <i class="fa-solid fa-heart-pulse"></i> Nosotros</h1>
                 <hr class="wow fadeInLeft">
                 <div class="row">
-        
+
+                    <div class="col-md-12" style="margin-top: -5rem;">
+                        <div class="about-content">
+                            <div class="box">
+                                <h3 class="values_mv"> <i class="fa-solid fa-timeline"></i> <span>¿Quiénes Somos?</span> </h3>
+                                <p>
+                                    Laboratorio Clínico <span class="ecomedics_bold">ECO MEDIC'S</span> inició ofreciendo servicios en la colonia Alfredo del Mazo, <span class="ixtapaluca_bold">Ixtapaluca</span>, Estado de México, 
+                                    con la convicción de que la salud debe estar al alcance de todos. Creemos firmemente que los servicios de laboratorio no 
+                                    deben concentrarse únicamente en el centro de la ciudad, sino estar cerca y ser accesibles a todas las colonias de nuestra
+                                    comunidad, manteniendo siempre la calidad y el profesionalismo que nos caracteriza.
+                                </p>
+                                <p>
+                                    Este proyecto surgió al notar que muchas personas no contaban con un laboratorio cercano y accesible, 
+                                    y <strong>decidimos ser esa opción confiable, moderna y humana.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-md-6 values wow fadeInDown">
                         <div class="about-content">
                             <div class="box">
@@ -134,6 +160,10 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-md-12 d-flex justify-content-center values_econograma">
+                        <img class="img-fluid" src="/assets/images/logo_ciruclar.png" alt="Econograma de Ecomedic's">
+                    </div>
                 </div>
             </div>
             <span id="services"></span>
@@ -151,13 +181,13 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="1.5s">
                         <div class="info-card">
                             <h3>RADIOLOGÍA</h3>
-                            <img src="/assets/images/servicios_radiologia.png" alt="Imagen de estudios de radiologia" class="img-fluid mb-3" width="100%">
+                            <img src="/assets/images/servicios_radiologia.jpg" alt="Imagen de estudios de radiologia" class="img-fluid mb-3" width="100%">
                             <ul>
-                                <li>Rayos x convencional</li>
-                                <li>Mastografía bilateral</li>
-                                <li>Densitometría ósea </li>
-                                <li>Tomografía computarizada (TAC)</li>
-                                <li>Resonancia magnética</li>
+                                <li>Rayos X Convencional</li>
+                                <li>Mastografía Bilateral</li>
+                                <li>Densitometría Ósea </li>
+                                <li>Tomografía Computarizada (TAC)</li>
+                                <li>Resonancia Magnética</li>
                             </ul>
                         </div>
                     </div>
@@ -165,14 +195,14 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2s">
                         <div class="info-card">
                             <h3>LABORATORIO</h3>
-                            <img src="/assets/images/servicios_laboratorio.png" alt="Imagen de estudios de laboratorio" class="img-fluid mb-3" width="100%">
+                            <img src="/assets/images/servicios_laboratorio.jpg" alt="Imagen de estudios de laboratorio" class="img-fluid mb-3" width="100%">
                             <ul>
-                                <li>Análisis clínicos</li>
+                                <li>Análisis Clínicos</li>
                                 <li>Bacteriología</li>
+                                <li>Colposcopia y Papanicolaou</li>
                                 <li>Histopatología</li>
                                 <li>Toxicología</li>
-                                <li>Toma de biopsias</li>
-                                <li>Citología exfoliativa</li>
+                                <li>Citología Exfoliativa</li>
                             </ul>
                         </div>
                     </div>
@@ -180,50 +210,135 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2.5s">
                         <div class="info-card">
                             <h3>ULTRASONOGRAFÍA</h3>
-                            <img src="/assets/images/servicios_ultrasonografia.png" alt="Imagen de estudios de ultrasonografia" class="img-fluid mb-3" width="100%">
+                            <img src="/assets/images/servicios_ultrasonografia.jpg" alt="Imagen de estudios de ultrasonografia" class="img-fluid mb-3" width="100%">
                             <ul>
-                                <li>Ultrasonido convencional</li>
+                                <li>Ultrasonido Convencional</li>
+                                <li>Musculoesquelético</li>
+                                <li>Obstétrico Estructural</li>
                                 <li>Ultrasonido 4D</li>
                                 <li>Ultrasonido Doppler</li>
                             </ul>
                         </div>
                     </div>
         
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="3s">
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="1.5s">
                         <div class="info-card">
-                            <h3>DENTAL</h3>
-                            <img src="/assets/images/servicios_dentales.png" alt="Imagen de estudios dentales" class="img-fluid mb-3" width="100%">
+                            <h3>CARDIOLOGÍA</h3>
+                            <img src="/assets/images/servicios_cardiologia.jpg" alt="Imagen de estudios de cardiologia" class="img-fluid mb-3" width="100%">
                             <ul>
-                                <li>Rayos X dentales</li>
-                                <li>Estudio de ortodoncia</li>
-                                <li>Escaneo dental</li>
+                                <li>Ecocardiograma (ECO)</li>
+                                <li>Electrocardiograma (ECG)</li>
+                                <li>Monitoreo Ambulatorio de Presión Arterial (MAPA)</li>
                             </ul>
                         </div>
                     </div>
         
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="3.5s">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2s">
                         <div class="info-card">
-                            <h3>ESPECIALES</h3>
-                            <img src="/assets/images/servicios_especiales.png" alt="Imagen de estudios especiales" class="img-fluid mb-3" width="100%">
+                            <h3>NEUROLOGÍA</h3>
+                            <img src="/assets/images/servicios_neurologia.jpg" alt="Imagen de estudios de neurología" class="img-fluid mb-3" width="100%">
                             <ul>
-                                <li>Ecocardiograma (ECO)</li>
-                                <li>Electrocardiograma (ECG)</li>
-                                <li>Mapeo cerebral</li>
-                                <li>Colposcopia y papanicolaou</li>
-                                <li>Endoscopia y colonoscopia</li>
-                                <li>Androscopía</li>
-                                <li>Monitoreo ambulatorio de presión arterial (MAPA)</li>
+                                <li>Electroencefalograma (EEG)</li>
                             </ul>
                         </div>
                     </div>
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2.5s">
+                        <div class="info-card">
+                            <h3>DENTAL</h3>
+                            <img src="/assets/images/servicios_dentales.jpg" alt="Imagen de estudios dentales" class="img-fluid mb-3" width="100%">
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <div style="display: flex; flex-wrap: nowrap;">
+                                                <p style="margin-bottom: 0;"> Rayos X Dentales </p>
+                                                <div class="see_more"><span id="see_more_dentales">Ver más</span></div>
+                                            </div>
+                                        </summary>
+                                        <ul style="font-size: 14px;">
+                                            <li>Rx Panorámica</li>
+                                            <li>Rx Periapical</li>
+                                            <li>Rx Lateral de cráneo</li>
+                                            <li>Rx Oclusal</li>
+                                            <li>Rx Cráneo AP o PA </li>
+                                            <li>Rx Articulación Temporomandibular </li>
+                                            <li>Rx Mano Carpal</li>
+                                        </ul>
+                                    </details>
+                                </li>
+
+                                <li>Tomografía Dental</li>
+
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <div style="display: flex; flex-wrap: nowrap;">
+                                                <p style="margin-bottom: 0;">Paquetes Dentales (Ortodoncia) </p>
+                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                            </div>
+                                        </summary>
+                                        <ul style="font-size: 14px;">
+                                            <li>Rayos X</li>
+                                            <li>Fotografía</li>
+                                            <li>Escaneo Intraoral</li>
+                                            <li>Trazos Cefalométricos</li>
+                                            <li>Modelo Digital/Yeso</li>
+                                        </ul>
+                                    </details>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="1.5s">
+                        <div class="info-card">
+                            <br class="services_space_bar">
+                            <h3>PATOLOGÍA</h3>
+                            <img src="/assets/images/servicios_patologia.jpg" alt="Imagen de estudios de patologia" class="img-fluid mb-3" width="100%">
+                            <ul>
+                                <li>Histopatología</li>
+                                <li>Citología Exfoliativa</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2s">
+                        <div class="info-card">
+                            <h3>MEDICINA INTERVENCIONISTA</h3>
+                            <img src="/assets/images/servicios_intervencionista.jpg" alt="Imagen de la toma de una biopsia" class="img-fluid mb-3" width="100%">
+                            <ul>
+                                <li>Toma de Biopsias</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown" data-wow-duration="2.5s">
+                        <div class="info-card">
+                            <br class="services_space_bar">
+                            <h3>ESPECIALES</h3>
+                            <img src="/assets/images/servicios_especiales.jpg" alt="Imagen de estudios de un mapeo cerebral" class="img-fluid mb-3" width="100%">
+                            <ul>
+                                <li>Mapeo cerebral</li>
+                                <li>Endoscopia y colonoscopia</li>
+                                <li>Androscopía</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+
                 </div>
             </div>
+            <div id="branches"></div>
         </section>
         <!--! ----- Services Section Ends Here  ------->
 
 
         <!--!  Branches Section Starts Here  -->
-        <section id="branches" class="branches">
+        <section class="branches">
             <div class="container">
                 <h1 class="heading wow fadeInLeft" data-wow-duration="2s"> <i class="fa-solid fa-location-dot"></i> Nuestras Sucursales</h1>
                 <hr class="wow fadeInLeft">
@@ -317,388 +432,185 @@
                     </div>
                 </div>
             </div>
+            <div id="comunity"></div>
         </section>
         <!--!  Branches Section Ends Here  -->
 
 
         <!--!  Comunity Section Starts Here   -->
-        <section id="comunity" class="comunity">
+        <section class="comunity">
             <div class="container">
                 <h1 class="heading text-center text-light pt-4 wow fadeInLeft" data-wow-duration="2s">#IxtapalucaEsEcomedics</h1>
                 <hr class="wow fadeInLeft">
-                
                 <div class="row justify-content-center">
-        
-        
-        <!-- START DEL -->
-                    <style>
-                        /* From Uiverse.io by Nawsome */
-                        .wheel-and-hamster {
-                            --dur: 1s;
-                            position: relative;
-                            width: 12em;
-                            height: 12em;
-                            font-size: 14px;
-                        }
-        
-                        .wheel,
-                        .hamster,
-                        .hamster div,
-                        .spoke {
-                            position: absolute;
-                        }
-        
-                        .wheel,
-                        .spoke {
-                            border-radius: 50%;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                        }
-        
-                        .wheel {
-                            background: radial-gradient(100% 100% at center, hsla(0, 0%, 60%, 0) 47.8%, hsl(0, 0%, 60%) 48%);
-                            z-index: 2;
-                        }
-        
-                        .hamster {
-                            animation: hamster var(--dur) ease-in-out infinite;
-                            top: 50%;
-                            left: calc(50% - 3.5em);
-                            width: 7em;
-                            height: 3.75em;
-                            transform: rotate(4deg) translate(-0.8em, 1.85em);
-                            transform-origin: 50% 0;
-                            z-index: 1;
-                        }
-        
-                        .hamster__head {
-                            animation: hamsterHead var(--dur) ease-in-out infinite;
-                            background: hsl(30, 90%, 55%);
-                            border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
-                            box-shadow: 0 -0.25em 0 hsl(30, 90%, 80%) inset,
-                                0.75em -1.55em 0 hsl(30, 90%, 90%) inset;
-                            top: 0;
-                            left: -2em;
-                            width: 2.75em;
-                            height: 2.5em;
-                            transform-origin: 100% 50%;
-                        }
-        
-                        .hamster__ear {
-                            animation: hamsterEar var(--dur) ease-in-out infinite;
-                            background: hsl(0, 90%, 85%);
-                            border-radius: 50%;
-                            box-shadow: -0.25em 0 hsl(30, 90%, 55%) inset;
-                            top: -0.25em;
-                            right: -0.25em;
-                            width: 0.75em;
-                            height: 0.75em;
-                            transform-origin: 50% 75%;
-                        }
-        
-                        .hamster__eye {
-                            animation: hamsterEye var(--dur) linear infinite;
-                            background-color: hsl(0, 0%, 0%);
-                            border-radius: 50%;
-                            top: 0.375em;
-                            left: 1.25em;
-                            width: 0.5em;
-                            height: 0.5em;
-                        }
-        
-                        .hamster__nose {
-                            background: hsl(0, 90%, 75%);
-                            border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
-                            top: 0.75em;
-                            left: 0;
-                            width: 0.2em;
-                            height: 0.25em;
-                        }
-        
-                        .hamster__body {
-                            animation: hamsterBody var(--dur) ease-in-out infinite;
-                            background: hsl(30, 90%, 90%);
-                            border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
-                            box-shadow: 0.1em 0.75em 0 hsl(30, 90%, 55%) inset,
-                                0.15em -0.5em 0 hsl(30, 90%, 80%) inset;
-                            top: 0.25em;
-                            left: 2em;
-                            width: 4.5em;
-                            height: 3em;
-                            transform-origin: 17% 50%;
-                            transform-style: preserve-3d;
-                        }
-        
-                        .hamster__limb--fr,
-                        .hamster__limb--fl {
-                            clip-path: polygon(0 0, 100% 0, 70% 80%, 60% 100%, 0% 100%, 40% 80%);
-                            top: 2em;
-                            left: 0.5em;
-                            width: 1em;
-                            height: 1.5em;
-                            transform-origin: 50% 0;
-                        }
-        
-                        .hamster__limb--fr {
-                            animation: hamsterFRLimb var(--dur) linear infinite;
-                            background: linear-gradient(hsl(30, 90%, 80%) 80%, hsl(0, 90%, 75%) 80%);
-                            transform: rotate(15deg) translateZ(-1px);
-                        }
-        
-                        .hamster__limb--fl {
-                            animation: hamsterFLLimb var(--dur) linear infinite;
-                            background: linear-gradient(hsl(30, 90%, 90%) 80%, hsl(0, 90%, 85%) 80%);
-                            transform: rotate(15deg);
-                        }
-        
-                        .hamster__limb--br,
-                        .hamster__limb--bl {
-                            border-radius: 0.75em 0.75em 0 0;
-                            clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 90%, 70% 100%, 30% 100%, 40% 90%, 0% 30%);
-                            top: 1em;
-                            left: 2.8em;
-                            width: 1.5em;
-                            height: 2.5em;
-                            transform-origin: 50% 30%;
-                        }
-        
-                        .hamster__limb--br {
-                            animation: hamsterBRLimb var(--dur) linear infinite;
-                            background: linear-gradient(hsl(30, 90%, 80%) 90%, hsl(0, 90%, 75%) 90%);
-                            transform: rotate(-25deg) translateZ(-1px);
-                        }
-        
-                        .hamster__limb--bl {
-                            animation: hamsterBLLimb var(--dur) linear infinite;
-                            background: linear-gradient(hsl(30, 90%, 90%) 90%, hsl(0, 90%, 85%) 90%);
-                            transform: rotate(-25deg);
-                        }
-        
-                        .hamster__tail {
-                            animation: hamsterTail var(--dur) linear infinite;
-                            background: hsl(0, 90%, 85%);
-                            border-radius: 0.25em 50% 50% 0.25em;
-                            box-shadow: 0 -0.2em 0 hsl(0, 90%, 75%) inset;
-                            top: 1.5em;
-                            right: -0.5em;
-                            width: 1em;
-                            height: 0.5em;
-                            transform: rotate(30deg) translateZ(-1px);
-                            transform-origin: 0.25em 0.25em;
-                        }
-        
-                        .spoke {
-                            animation: spoke var(--dur) linear infinite;
-                            background: radial-gradient(100% 100% at center, hsl(0, 0%, 60%) 4.8%, hsla(0, 0%, 60%, 0) 5%),
-                                linear-gradient(hsla(0, 0%, 55%, 0) 46.9%, hsl(0, 0%, 65%) 47% 52.9%, hsla(0, 0%, 65%, 0) 53%) 50% 50% / 99% 99% no-repeat;
-                        }
-        
-                        /* Animations */
-                        @keyframes hamster {
-        
-                            from,
-                            to {
-                                transform: rotate(4deg) translate(-0.8em, 1.85em);
-                            }
-        
-                            50% {
-                                transform: rotate(0) translate(-0.8em, 1.85em);
-                            }
-                        }
-        
-                        @keyframes hamsterHead {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(0);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(8deg);
-                            }
-                        }
-        
-                        @keyframes hamsterEye {
-        
-                            from,
-                            90%,
-                            to {
-                                transform: scaleY(1);
-                            }
-        
-                            95% {
-                                transform: scaleY(0);
-                            }
-                        }
-        
-                        @keyframes hamsterEar {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(0);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(12deg);
-                            }
-                        }
-        
-                        @keyframes hamsterBody {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(0);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(-2deg);
-                            }
-                        }
-        
-                        @keyframes hamsterFRLimb {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(50deg) translateZ(-1px);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(-30deg) translateZ(-1px);
-                            }
-                        }
-        
-                        @keyframes hamsterFLLimb {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(-30deg);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(50deg);
-                            }
-                        }
-        
-                        @keyframes hamsterBRLimb {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(-60deg) translateZ(-1px);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(20deg) translateZ(-1px);
-                            }
-                        }
-        
-                        @keyframes hamsterBLLimb {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(20deg);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(-60deg);
-                            }
-                        }
-        
-                        @keyframes hamsterTail {
-        
-                            from,
-                            25%,
-                            50%,
-                            75%,
-                            to {
-                                transform: rotate(30deg) translateZ(-1px);
-                            }
-        
-                            12.5%,
-                            37.5%,
-                            62.5%,
-                            87.5% {
-                                transform: rotate(10deg) translateZ(-1px);
-                            }
-                        }
-        
-                        @keyframes spoke {
-                            from {
-                                transform: rotate(0);
-                            }
-        
-                            to {
-                                transform: rotate(-1turn);
-                            }
-                        }
-                    </style>
-        
-                    
-                    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-                        <div class="wheel"></div>
-                        <div class="hamster">
-                            <div class="hamster__body">
-                                <div class="hamster__head">
-                                    <div class="hamster__ear"></div>
-                                    <div class="hamster__eye"></div>
-                                    <div class="hamster__nose"></div>
-                                </div>
-                                <div class="hamster__limb hamster__limb--fr"></div>
-                                <div class="hamster__limb hamster__limb--fl"></div>
-                                <div class="hamster__limb hamster__limb--br"></div>
-                                <div class="hamster__limb hamster__limb--bl"></div>
-                                <div class="hamster__tail"></div>
+
+                    <div class="col-md-12">
+                        <div class="about-comunity">
+                            <div class="box">
+                                <h3> <i class="fa-solid fa-people-robbery"></i> <span>Compromiso por Nuestra Comunidad</span> </h3>
+                                <p>
+                                    Estamos orgullosos de haber nacido en Ixtapaluca y de crecer junto a su gente, fortaleciendo la salud y bienestar de nuestra comunidad.
+                                </p>
+                                <p>
+                                    Regularmente realizamos jornadas gratuitas y promociones con descuentos, acercando la salud a quienes más lo necesitan. Buscamos que todos nuestros pacientes tengan acceso a diagnósticos de calidad, sin importar su ubicación o situación económica.
+                                </p>
                             </div>
                         </div>
-                        <div class="spoke"></div>
                     </div>
         
-        <!-- END DEL -->
+                    <!--  AREA DE INYECCIÓN -->
+                    <div id="campaigns" class="campaigns">
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_1.png" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">JORNADA MÉDICA “GUARDERIA LOS HEROES U- 0611”</p>
+                                        <p class="text-muted description">
+                                            Laboratorio clínico Ecomedic´s  en conjunto con la guardería “los héroes U-0611”, realizamos estudios clínicos para todos sus colaboradores, que día a día cultivan y cuidan a los más pequeños de nuestra comunidad. 
+                                            <br><br>Reconocemos la importancia de trabajar en conjunto brindando los mejores servicios a un precio accesible y seguir cuidando de Ixtapaluca.
+                                        </p>
+                                        <p class="text-muted date">2024</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_2.png" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">CARRERA ALLEYCAT 2024</p>
+                                        <p class="text-muted description">
+                                            Para Laboratorio Clínico Ecomedic´s fue un orgullo poder ser parte de la carrera de ciclismo ALLEYCAT 2024, en la cual nuestro stand de premiación fue tu punto de llegada de esta gran aventura.
+                                            <br><br>Reconocemos la importancia de compartir la salud a través del deporte, nuestra meta es acompañarte en cada logro que consigas, porque estamos comprometidos con una calidad de vida mejor para Ixtapaluca.
+                                        </p>
+                                        <p class="text-muted date">2024</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_3.png" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">POSADA ECOMEDIC´S 2024</p>
+                                        <p class="text-muted description">
+                                            Porque Ixtapaluca es nuestro hogar y lo compartimos en familia, nos honra haber cerrado con broche de oro el año 2024, participado en la posada realizada en la delegación Alfredo del Mazo, disfrutando de una velada inolvidable, junto a nuestra familia Ecomedic´s.
+                                            <br><br>Cuidamos de tu salud y la de tu familia todos los días.
+                                        </p>
+                                        <p class="text-muted date">2024</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_4.jpg" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">DIA DEL NIÑO 2025</p>
+                                        <p class="description">
+                                            Con alegría y un gran compromiso con nuestra comunidad, en Ecomedic´s celebramos un día muy especial para los más pequeños. Con juegos, premios y muchas sonrisas este día se volvió inolvidable para nosotros. 
+                                            <br><br>¡Gracias Ixtapaluca y feliz día del niño!
+                                        </p>
+                                        <p class="text-muted date">2025</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_5.jpg" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">CYCLING FEST 2025</p>
+                                        <p class="description">
+                                            Siendo fieles a nuestro compromiso con el deporte en Ixtapaluca y nuestro gusto por apoyar a todos aquellos que buscan mejorar su salud. Participamos en esta gran carrera de ciclismo, colocando un stand de rehidratación y escoltando a los participantes, donde todos dieron su mejor esfuerzo por conseguir la meta.
+                                            <br><br>¡Ecomedic´s te acompañara por más logros!
+                                        </p>
+                                        <p class="text-muted date">2025</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+                        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_6.png" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">JORNADA MEDICA “NOVAFARMA 2025”</p>
+                                        <p class="description">
+                                            Fieles a nuestros valores, Ecomedic´s trabaja de la mano con Novafarma. Brindando estudios a precios accesibles y grandes descuentos en todos nuestros servicios.
+                                            <br><br>Tu confianza en nosotros nos mueve cada día para seguir realizando estos eventos y llevarlos a más lugares de Ixtapaluca. 
+                                        </p>
+                                        <p class="text-muted date">2025</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+                        
+                        <article class="comunity__card">
+                            <div class="card_media">
+                                <img src="/data/campaigns/campana_7.jpg" alt="">
+                            </div>
+                            <footer class="card__footer">
+                                <div class="card__job-summary">
+                                    <div class="card__job-icon">
+                                        <img src="/assets/images/logo_ciruclar.png" style="width: 0px;">
+                                    </div>
+                                    <div class="card__job">
+                                        <p class="card__job-title">JORNADA MEDICA “DELEGACION ALFREDO DEL MAZO”</p>
+                                        <p class="description">
+                                            Gracias a la confianza de la Delegación de Alfredo del Mazo, acercamos una vez más nuestros servicios a precios asequibles, con el fin que todos aquellos que lo necesiten puedan cuidar de su salud y la de su familia. 
+                                            <br><br>Laboratorio clínico Ecomedic´s seguirá trabajando por un Ixtapaluca saludable. 
+                                        </p>
+                                        <p class="text-muted date">2025</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+
+                    </div>
+                    <!--  FIN DE AREA INYECCIÓN -->
+        
                 </div>
-                <h1 class="heading text-center text-light pt-4 wow fadeInLeft" data-wow-duration="2s">Sección en desarrollo...</h1>
         </section>
         <!--!  Comunity Section Ends Here   -->
 
@@ -731,7 +643,7 @@
                                 <h3 class="text-center text-light">Contáctanos</h3>
                                 <ul class="nav flex-column text-justify">
                                     <li class="nav-item mb-2"> <i class="fa-solid fa-phone me-2"> </i> <span>55 9356 8780</span> </li>
-                                    <li class="nav-item mb-2"> <i class="fa-solid fa-envelope me-2"> </i> <span>ecomedicsa573@gmail.com</span> </li>
+                                    <li class="nav-item mb-2"> <i class="fa-solid fa-envelope me-2"> </i> <span>eco.medic.s.dx@gmail.com</span> </li>
                                     <li class="nav-item mb-2"> <i class="fa-solid fa-location-dot me-2"> </i> <span>Av. Colibrí Mz. 30 Lt 21, Colonia Alfredo del Mazo, Ixtapaluca, Edo. Mex, C.P. 56577</span> </li>
                                 </ul>
                             </div>
@@ -758,7 +670,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/branches_carousel.js"></script>
+    <script src="js/fix_scripts.js"></script>
+    <script src="js/corousels.js"></script>
+    <script src="js/promotions_banner.js"></script>
 </body>
 </html>

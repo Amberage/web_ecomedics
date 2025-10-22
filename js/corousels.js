@@ -92,8 +92,8 @@
     updateCardWidths();
 }); */
 
-/* Carousel Infinito */
-document.addEventListener('DOMContentLoaded', function () {
+/* Carousel Infinito para Sucursales */
+/* document.addEventListener('DOMContentLoaded', function () {
     const AUTO_SLIDE_TIME = 10000;
 
     const row = document.querySelector('#branches .row');
@@ -216,3 +216,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
     autoSlide = setInterval(() => nextButton.click(), AUTO_SLIDE_TIME);
 });
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('#campaigns');
+    const cards = Array.from(container.querySelectorAll('.comunity__card'));
+
+    if (cards.length <= 1) return; // nada que deslizar
+
+    // Crear estructura
+    const track = document.createElement('div');
+    track.className = 'campaigns__track';
+    cards.forEach(card => {
+        const slide = document.createElement('div');
+        slide.className = 'campaigns__slide';
+        slide.appendChild(card);
+        track.appendChild(slide);
+    });
+
+    // Clonar los primeros para efecto infinito
+    cards.slice(0, 3).forEach(card => {
+        const clone = card.cloneNode(true);
+        const slide = document.createElement('div');
+        slide.className = 'campaigns__slide';
+        slide.appendChild(clone);
+        track.appendChild(slide);
+    });
+
+    container.innerHTML = '';
+    container.appendChild(track);
+
+    let index = 0;
+    let isAnimating = false;
+
+    function getVisibleCount() {
+        return window.innerWidth < 768 ? 1 : 3;
+    }
+
+    function slideNext() {
+        if (isAnimating) return;
+        isAnimating = true;
+        const visible = getVisibleCount();
+        index++;
+        track.style.transition = 'transform 0.6s ease';
+        track.style.transform = `translateX(-${index * (100 / visible)}%)`;
+
+        setTimeout(() => {
+        if (index >= cards.length) {
+            track.style.transition = 'none';
+            index = 0;
+            track.style.transform = `translateX(0)`;
+        }
+        isAnimating = false;
+        }, 700);
+    }
+
+    // Auto-slide
+    setInterval(slideNext, 4000);
+
+    // Reset al cambiar tamaño de pantalla
+    window.addEventListener('resize', () => {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(0)`;
+        index = 0;
+    });
+});
+

@@ -1,0 +1,150 @@
+.comunity__card {
+    margin: auto;
+    width: min(350px, 100%);
+    background-color: #fefefe;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #141417;
+    margin: 20px 10px 20px 10px;
+}
+
+.card_media {
+    max-width: 350px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Buena práctica */
+}
+
+.card_media img,
+video {
+    border-radius: 1rem;
+    max-width: 100%;
+    /* Nunca será más ancho que el contenedor */
+    max-height: 100%;
+    /* Nunca será más alto que el contenedor */
+
+    /* Asegura que la proporción se mantenga */
+    width: auto;
+    height: auto;
+}
+
+.card__job p {
+    margin: 0;
+    color: var(--red);
+}
+
+.card__job .description {
+    font-weight: 500;
+    color: var(--blue) !important;
+    margin-bottom: 10px;
+}
+
+.card__job .date {
+    font-size: small;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    bottom: 25px !important;
+}
+
+.card__hero {
+    background-color: #fef4e2;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.card__hero .card__job-title {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 2rem;
+}
+
+.card__hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.75rem;
+    row-gap: 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.card__job-summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+.campaigns {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.campaigns__track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.campaigns__slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campaigns__track {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .campaigns__slide {
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media (min-width: 340px) {
+    .card__footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .card__btn {
+        width: max-content;
+    }
+}
+
+@media (max-width: 767px) {
+    .card__job .description {
+        font-weight: 400;
+        font-size: 0.800em;
+        color: var(--blue) !important;
+    }
+
+    .card__job .date {
+        font-size: x-small;
+
+    }
+}

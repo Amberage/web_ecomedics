@@ -71,6 +71,15 @@
   margin: 0 auto;
 }
 
+.about .values_econograma {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.about .values_econograma img {
+  max-height: 350px;
+}
+
 /*@ Services */
 .services .container {
   padding-top: 2rem;
@@ -82,6 +91,46 @@
 
 .services img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.services summary {
+  list-style-type: none;
+}
+
+.services span {
+  color: var(--red);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.services .see_more {
+  margin-left: 8px;
+  margin-top: 1px;
+  animation: scale 2s infinite;
+}
+
+/* 1. Estado por defecto (cerrado) */
+.services details > *:not(summary) {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* Esta transición se aplica en todos los cambios */
+  transition: opacity 0.8s ease, max-height 0.5s ease;
+}
+
+/* 2. Estado abierto */
+/* Se activa cuando el <details> tiene el atributo [open] */
+.services details[open] > *:not(summary) {
+  opacity: 1;
+  max-height: 500px; /* Asegúrate que 500px sea suficiente altura */
+}
+
+/* 3. Estado "cerrando" (la corrección clave) */
+/* Esta clase la añadirá JS para anular el [open] y animar el cierre */
+.services details.closing > *:not(summary) {
+  opacity: 0;
+  max-height: 0;
 }
 
 /*@ Branches  */
@@ -119,4 +168,35 @@
   .about-content .values_mv {
     text-align: left;
   }
+
+  .services_space_bar {
+    display: none;
+  }
 }
+
+
+
+/*@ Promos */
+/* .promos {
+  text-align: center;
+  background-color: #222e34;
+  background-image: url("/assets/images/logo_bg_negro.png");
+  background-size: 20%;
+  background-attachment: fixed;
+
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.promos img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1930px) {
+  .promos img {
+    width: 1800px;
+    height: 700px;
+  }
+} */
