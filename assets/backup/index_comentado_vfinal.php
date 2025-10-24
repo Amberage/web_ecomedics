@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>ECO Medic's Ixtapaluca</title>
 </head>
-
 <body>
+    <!--! ---------- HEADER-AREA START HERE  ------------>
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
@@ -30,28 +29,33 @@
             </div>
         </nav>
     </header>
+    <!--! ---------- HEADER-AREA ENDS HERE  ------------>
 
+    <!--! ---------------- MAIN AREA START HERE  ------------------>
     <main id="home">
+        <!--! --------- Promos Section HERE  ----------->
         <section class="promotions">
             <div class="container">
                 <div class="row">
-                    <div class="promo-carousel">
-                        <div id="promo_inyection" class="promo-track" id="promotion_injection">
+                        <div class="promo-carousel">
+                            <div id="promo_inyection" class="promo-track" id="promotion_injection">
+                            </div>
+                            <button class="promo-prev" aria-label="Anterior">&#10094;</button>
+                            <button class="promo-next" aria-label="Siguiente">&#10095;</button>
                         </div>
-                        <button class="promo-prev" aria-label="Anterior">&#10094;</button>
-                        <button class="promo-next" aria-label="Siguiente">&#10095;</button>
-                    </div>
                 </div>
             </div>
         </section>
+        <!--! --------- Promos Section HERE  ----------->
 
+        <!--! --------- HOME Section HERE  ----------->
         <section id="welcome" class="home">
             <div class="container">
                 <div class="row wow fadeIn" data-wow-duration="2s">
-
+        
                     <div class="col-md-7">
                         <div class="content-area welcome_text">
-                            <h1><img src="/assets/images/logo_color_fondo_blanco.png" style="max-width: 100%; margin-bottom: 20px;"></h1>
+                            <h1><img src="/assets/images/logo_color_fondo_blanco.png" style="max-width: 100%; margin-bottom: 20px;" ></h1>
                             <p style="font-weight: bold;">Tu laboratorio de confianza, cerca de ti.</p>
                             <p>Tu bienestar es nuestra prioridad. En <span class="ecomedics_bold">ECO Medic's</span> <span class="ixtapaluca_bold">Ixtapaluca</span>, combinamos tecnología de punta para tus análisis clínicos,
                                 rayos X y ultrasonidos, con la atención cálida y humana que te hace sentir seguro. Obtén resultados precisos y claros
@@ -59,7 +63,7 @@
                             <a href="#branches"><button class=" btn-style btn mt-1">Visítanos en Ixtapaluca</button></a>
                         </div>
                     </div>
-
+        
                     <div class="col-md-5 mt-2">
                         <img class="img-fluid" src="/assets/images/ai_doctores_home.webp" style="margin-top: 5rem;" width="100%" alt="home">
                     </div>
@@ -67,8 +71,10 @@
             </div>
             <span id="about"></span>
         </section>
+        <!--! --------- HOME Section HERE  ----------->
 
 
+        <!--! ---- About Section Start here  ------>
         <section class="about">
             <div class="container">
                 <h1 class="heading wow bounceIn"> <i style="color: var(--red);" class="fa-solid fa-heart-pulse"></i> Nosotros</h1>
@@ -80,13 +86,13 @@
                             <div class="box">
                                 <h3 class="values_mv wow fadeInUp"> <i class="fa-solid fa-timeline"></i> <span>¿Quiénes Somos?</span> </h3>
                                 <p class="wow zoomIn">
-                                    Laboratorio Clínico <span class="ecomedics_bold">ECO Medic's</span> inició ofreciendo servicios en la colonia Alfredo del Mazo, <span class="ixtapaluca_bold">Ixtapaluca</span>, Estado de México,
-                                    con la convicción de que la salud debe estar al alcance de todos. Creemos firmemente que los servicios de laboratorio no
+                                    Laboratorio Clínico <span class="ecomedics_bold">ECO Medic's</span> inició ofreciendo servicios en la colonia Alfredo del Mazo, <span class="ixtapaluca_bold">Ixtapaluca</span>, Estado de México, 
+                                    con la convicción de que la salud debe estar al alcance de todos. Creemos firmemente que los servicios de laboratorio no 
                                     deben concentrarse únicamente en el centro de la ciudad, sino estar cerca y ser accesibles a todas las colonias de nuestra
                                     comunidad, manteniendo siempre la calidad y el profesionalismo que nos caracteriza.
                                 </p>
                                 <p class="wow zoomIn">
-                                    Este proyecto surgió al notar que muchas personas no contaban con un laboratorio cercano y accesible,
+                                    Este proyecto surgió al notar que muchas personas no contaban con un laboratorio cercano y accesible, 
                                     y <strong>decidimos ser esa opción confiable, moderna y humana.</strong>
                                 </p>
                             </div>
@@ -105,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="col-md-6 values">
                         <div class="about-content">
                             <div class="box">
@@ -117,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="col-md-12 values">
                         <div class="about-content">
                             <div class="box">
@@ -152,12 +158,12 @@
                                         <strong>Rapidez</strong>
                                         <p>Nos comprometemos a entregar resultados oportunos, entendiendo la importancia del tiempo en el cuidado de la salud.</p>
                                         <div class="hr_value"></div>
-                                    </div>
+                                    </div>                     
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-md-12 d-flex justify-content-center values_econograma wow bounce">
                         <img class="img-fluid" src="/assets/images/logo_ciruclar.png" alt="Econograma de ECO Medic's">
                     </div>
@@ -165,14 +171,16 @@
             </div>
             <span id="services"></span>
         </section>
+        <!--! ---- About Section Ends here  ------>
 
 
+        <!--! ----- Services Section Start Here  ------->
         <section class="services">
             <div class="container mt-5">
                 <h1 class="heading wow fadeInUp" data-wow-duration="1s"> <i class="fa-solid fa-hospital"></i> Nuestros Servicios </h1>
                 <hr class="wow bounceIn">
                 <div class="row justify-content-center" style="padding-top: 2rem;">
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>RADIOLOGÍA</h3>
@@ -186,7 +194,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>LABORATORIO</h3>
@@ -201,7 +209,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>ULTRASONOGRAFÍA</h3>
@@ -215,7 +223,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>CARDIOLOGÍA</h3>
@@ -227,7 +235,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>NEUROLOGÍA</h3>
@@ -237,7 +245,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>DENTAL</h3>
@@ -286,7 +294,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <br class="services_space_bar">
@@ -298,7 +306,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <h3>MEDICINA INTERVENCIONISTA</h3>
@@ -308,7 +316,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="col-12 col-md-6 col-lg-4 mb-4 wow bounceIn">
                         <div class="info-card">
                             <br class="services_space_bar">
@@ -321,19 +329,21 @@
                             </ul>
                         </div>
                     </div>
-
+        
                 </div>
             </div>
             <div id="branches"></div>
         </section>
+        <!--! ----- Services Section Ends Here  ------->
 
 
+        <!--!  Branches Section Starts Here  -->
         <section class="branches">
             <div class="container">
                 <h1 class="heading wow fadeInUp" data-wow-duration="1s"> <i class="fa-solid fa-location-dot"></i> Nuestras Sucursales</h1>
                 <hr class="wow bounceIn">
                 <div class="row wow fadeInUp">
-                    
+                    <!--* Alfredo del Mazo -->
                     <div class="col-lg-4 col-md-6 mt-4">
                         <div class="card">
                             <img src="assets/images/unidad_adelmazo.jpg" alt="Imagen de la Unidad Alfredo del Mazo">
@@ -354,7 +364,8 @@
                             </div>
                         </div>
                     </div>
-
+        
+                    <!--* Cuauhtémoc -->
                     <div class="col-lg-4 col-md-6 mt-4">
                         <div class="card">
                             <img src="assets/images/unidad_cuauhtemoc.jpg" alt="Imagen de la Unidad de Cuauhtémoc">
@@ -375,7 +386,8 @@
                             </div>
                         </div>
                     </div>
-
+        
+                    <!--* San Buenaventura -->
                     <div class="col-lg-4 col-md-6 mt-4">
                         <div class="card">
                             <img src="assets/images/unidad_buenaventura.jpg" alt="Imagen de la Unidad San Buenaventura">
@@ -396,7 +408,8 @@
                             </div>
                         </div>
                     </div>
-
+        
+                    <!--* Ayotla -->
                     <div class="col-lg-4 col-md-6 mt-4">
                         <div class="card">
                             <img src="assets/images/unidad_ayotla.jpg" alt="Imagen de la Unidad de Ayotla">
@@ -421,8 +434,10 @@
             </div>
             <div id="comunity"></div>
         </section>
+        <!--!  Branches Section Ends Here  -->
 
 
+        <!--!  Comunity Section Starts Here   -->
         <section class="comunity">
             <div class="container">
                 <h1 class="heading text-center text-light pt-4 wow fadeInUp" data-wow-duration="1s">#IxtapalucaEsEcomedics</h1>
@@ -442,21 +457,26 @@
                             </div>
                         </div>
                     </div>
-
+        
+                    <!--  AREA DE INYECCIÓN -->
                     <div id="campaigns" class="campaigns wow fadeInUp">
                     </div>
-
+                    <!--  FIN DE AREA INYECCIÓN -->
+        
                 </div>
         </section>
+        <!--!  Comunity Section Ends Here   -->
 
-
+        
     </main>
+    <!--! ---------------- MAIN AREA ENDS HERE  ------------------>
 
+    <!--! ------------- FOOTER AREA START HERE  --------------->
     <footer>
         <section id="footer" class="footer">
             <div class="container">
                 <div class="row">
-
+                    
                     <div class="col-md-5 text-justify">
                         <div class="box">
                             <a href="#home" class="logo"> <img src="/assets/images/logo_br_completo.png" alt=""> </a>
@@ -488,13 +508,14 @@
         </section>
         <div class="footer__bar"> ECO Medic's | Copyright © <?php echo date('Y'); ?> </div>
     </footer>
-
-
+    <!--! ------------- FOOTER AREA ENDS HERE  --------------->
+    
+    
+    <!--!  TOP BUTTON -->
     <div class="to-top">
-        <a href="https://wa.me/5544988914?text=Hola%2C%20quisiera%20solicitar%20informes%20sobre%20sus%20servicios." target="_blank"><i class="fa-brands fa-whatsapp"></i>
-            <div class="whatsapp__notification">1</div>
-        </a>
+        <a href="https://wa.me/5544988914?text=Hola%2C%20quisiera%20solicitar%20informes%20sobre%20sus%20servicios." target="_blank"><i class="fa-brands fa-whatsapp"></i> <div class="whatsapp__notification">1</div></a>
     </div>
+    <!--!  TOP BUTTON ENDS -->
 
     <script src="/js/vendor/jquery.js"></script>
     <script src="/js/vendor/bootstrap.min.js"></script>
@@ -506,5 +527,4 @@
     <script src="/js/app/promotions_banner.js"></script>
     <script src="/js/app/campaigns_banner.js"></script>
 </body>
-
 </html>
