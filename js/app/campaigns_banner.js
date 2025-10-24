@@ -15,7 +15,7 @@ function load_campaigns() {
             const requestStatus = data.request_status?.[0];
             const requestMessage = data.request_status?.[1];
 
-            if (requestStatus === true && Array.isArray(data.campaigns)) {
+            if (requestStatus === true) {
                 const campaigns = data.campaigns;
                 let html = "";
 
@@ -41,6 +41,9 @@ function load_campaigns() {
                     CAMPAIGN_CONTAINER.innerHTML = html;
                     activateBanner = true;
                 } else {
+                    if(!data.campaigns === null){
+                        console.error("Error al cargar promociones:", requestMessage);
+                    }
                     CAMPAIGN_CONTAINER.innerHTML = "";
                     activateBanner = false;
                 }

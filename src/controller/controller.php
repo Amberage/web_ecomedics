@@ -48,7 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $responseData['request_status'] = [true, 'No hay campañas registradas actualmente.'];
                 }
             } else {
-                $responseData['request_status'] = [false, 'No hay campañas activas actualmente u ocurrió un error al consultar las campañas en la base de datos, póngase en contacto con el desarrollador.'];
+                $responseData['request_status'] = [false, 'Ocurrió un error al consultar las campañas en la base de datos, póngase en contacto con el desarrollador.'];
+                $responseData['campaigns'] = null;
             }
             
             break;
