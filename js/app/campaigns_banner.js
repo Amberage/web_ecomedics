@@ -48,7 +48,7 @@ function load_campaigns() {
                     activateBanner = false;
                 }
             } else {
-                console.error("Error al cargar campañas:", requestMessage);
+                //console.error("Error al cargar campañas:", requestMessage);
                 CAMPAIGN_CONTAINER.innerHTML = "";
             }
 
