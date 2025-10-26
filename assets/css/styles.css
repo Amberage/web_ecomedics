@@ -493,7 +493,28 @@ body {
 /*! ************ Footer Section Ends Here  *************/
 
 /*!  scroll button start here  */
-.to-top a {
+.to_top a {
+  padding: 7px 15px;
+  background: var(--red);
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  position: fixed;
+  left: 2rem;
+  bottom: 1rem;
+  border-radius: 50px;
+  color: white;
+  transition: 0.4s;
+}
+
+.to_top a:hover {
+  background-color: #fff;
+  color: #fff;
+  background-color: #3f3d3d;
+  animation: scale 2s infinite;
+}
+
+.to_bottom a {
   padding: 7px 15px;
   background: var(--green_whatsapp);
   display: inline-block;
@@ -505,7 +526,7 @@ body {
   color: white;
   transition: 0.4s;
 }
-.to-top a:hover {
+.to_bottom a:hover {
   background-color: #fff;
   color: #fff;
   background-color: #3f3d3d;
@@ -566,12 +587,24 @@ body {
     text-align: center;
   }
 
-  .to-top a {
+  .to_bottom a {
     padding: 3px 10px;
     font-size: 20px;
     right: 1rem;
   }
-  .to-top a:hover {
+  .to_bottom a:hover {
+    background-color: var(--green_whatsapp);
+    color: #fff;
+    animation: none;
+  }
+
+  .to_top a {
+    padding: 3px 10px;
+    font-size: 14px;
+    left: 10px;
+
+  }
+  .to_top a:hover {
     background-color: var(--green_whatsapp);
     color: #fff;
     animation: none;

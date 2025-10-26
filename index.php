@@ -68,7 +68,6 @@
             <span id="about"></span>
         </section>
 
-
         <section class="about">
             <div class="container">
                 <h1 class="heading wow bounceIn"> <i style="color: var(--red);" class="fa-solid fa-heart-pulse"></i> Nosotros</h1>
@@ -163,7 +162,6 @@
             <span id="services"></span>
         </section>
 
-
         <section class="services">
             <div class="container mt-5">
                 <h1 class="heading wow fadeInUp" data-wow-duration="1s"> <i class="fa-solid fa-hospital"></i> Nuestros Servicios </h1>
@@ -180,7 +178,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Rayos X</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -194,7 +192,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Tomografía Computarizada (TAC)</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -208,7 +206,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Resonancia Magnética (RM)</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -241,7 +239,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Toxicología</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -254,7 +252,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Citología Exfoliativa</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -278,7 +276,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>USG Obstétrico</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -305,7 +303,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Ecocardiograma</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -331,7 +329,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Electroencefalograma (EEG)</p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -389,7 +387,7 @@
                                         <summary>
                                             <div class="title_see_more">
                                                 <p>Paquetes Dentales (Ortodoncia) </p>
-                                                <div class="see_more"><span id="see_more_ortodoncia">Ver más</span></div>
+                                                <div class="see_more"><span>Ver más</span></div>
                                             </div>
                                         </summary>
                                         <ul>
@@ -447,12 +445,71 @@
                             <img src="/assets/images/servicios_colpen.jpg" alt="Imagen de estudios de colposcopia y penescopia" class="img-fluid mb-3" width="100%">
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="at_home_lab" class="home at_home_lab">
+            <div class="container">
+                <div class="row wow fadeIn" data-wow-duration="2s">
+
+                    <div class="col-md-12 text-center at_home_lab_title wow">
+                        <h1 class="heading wow bounceIn" > <i class="fa-solid fa-truck"></i> Laboratorio a Domicilio</h1>
+                        <hr class="wow bounceIn">
+                    </div>
+
+                    <div class="col-md-5 mt-2">
+                        <img class="img-fluid" src="/assets/images/at_home_lab_icon.webp" width="100%" alt="home">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="content-area at_home_lab_text">
+                            <p style="font-weight: bold;">Agenda tu cita de toma de muestra a domicilio...</p>
+                            <ul>
+                                <li>Te agendarán una cita recabando los datos del paciente y se proporcionarán claramente las indicaciones de cada estudio solicitado.</li>
+                                <li>Deberás proporcionar datos fidedignos acerca de la ubicación y puntos de referencia de tu hogar.</li>
+                                <li>¡Recuerda!, es muy importante que presentes una identificación oficial.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 text-center whatsapp">
+                            <a href="https://wa.me/5544988914?text=Hola%2C%20quisiera%20solicitar%20informes%20acerca%20del%20servicio%20de%20laboratorio%20a%20domicilio." target="_blank"><button class="btn-style btn whatsapp"> <i class="fa-brands fa-whatsapp"></i> <span>Agenda por WhatsApp</span> </button></a>
+                        </div>
+
+                    </div>
+                    
+                    <!--@ Formulario sin implementar hasta que el cliente lo solicite. -->
+                    <div class="class-md-12 at_home_lab_form mt-4">
+                        <form action="" method="POST" class="contact_form">
+                    
+                            <div class="form-group">
+                                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <textarea name="comentarios" rows="6" placeholder="Comentarios"></textarea>
+                            </div>
+                    
+                            <p class="privacy-text">
+                                Los datos que nos proporcionas son confidenciales.
+                                <br>Conoce nuestro <a href="/aviso-de-privacidad">Aviso de privacidad</a>.
+                            </p>
+                    
+                            <div class="form-group">
+                                <button type="submit" class="btn-enviar-form"> <i class="fa-solid fa-paper-plane" style="margin-left: -5px; margin-right: 10px;"></i> Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
 
                 </div>
             </div>
             <div id="branches"></div>
         </section>
-
 
         <section class="branches">
             <div class="container">
@@ -548,7 +605,6 @@
             <div id="comunity"></div>
         </section>
 
-
         <section class="comunity">
             <div class="container">
                 <h1 class="heading text-center text-light pt-4 wow fadeInUp" data-wow-duration="1s">#IxtapalucaEsEcomedics</h1>
@@ -617,7 +673,13 @@
     </footer>
 
 
-    <div class="to-top">
+    <div class="to_top">
+        <a href="#at_home_lab"><i class="fa-solid fa-truck"></i>
+            Laboratorio a domicilio
+        </a>
+    </div>
+
+    <div class="to_bottom">
         <a href="https://wa.me/5544988914?text=Hola%2C%20quisiera%20solicitar%20informes%20sobre%20sus%20servicios." target="_blank"><i class="fa-brands fa-whatsapp"></i>
             <div class="whatsapp__notification">1</div>
         </a>

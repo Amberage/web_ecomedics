@@ -149,6 +149,148 @@
 .services details ul {
   list-style-type: square;
 }
+/*@ At home lab  */
+#at_home_lab {
+  /* Ajustar el scroll del botón de laboratorio a domicilio */
+  scroll-margin-top: -800px !important; 
+}
+
+.at_home_lab_title {
+  margin-top: 4rem;
+}
+
+.at_home_lab_title h1 {
+  color: var(--white);
+}
+
+.at_home_lab_title i {
+  color: var(--red);
+}
+
+.at_home_lab_title hr {
+  width: 160px;
+  border-width: 4px;
+  border-color: var(--red);
+  margin: auto;
+  border-radius: 2px;
+  padding: 3px 0px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+
+.at_home_lab_text {
+  margin-top: 2rem !important;
+}
+.at_home_lab_text ul {
+  color: var(--white);
+  margin-left: 3rem;
+}
+
+.at_home_lab_text li {
+  margin-bottom: 15px;
+}
+
+/* Estilos generales para el contenedor del formulario */
+.at_home_lab_form {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    margin: 0 auto; /* Centrar el formulario */
+    display: none;
+}
+
+.contact_form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para los grupos de campos */
+.contact_form .form-group {
+    margin-bottom: 20px; /* Espacio entre cada campo */
+    text-align: center;
+}
+
+/* Estilo para los campos de texto, email y textarea */
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form textarea {
+    width: 100%;                /* Ocupan todo el ancho disponible */
+    padding: 14px 18px;         /* Relleno interno para más espacio */
+    border: 1px solid #dcdcdc;  /* Borde gris claro, como en la imagen */
+    border-radius: 5px;         /* Esquinas ligeramente redondeadas */
+    box-sizing: border-box;     /* Asegura que el padding no afecte el ancho total */
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Estilo para el texto fantasma (placeholder) */
+.contact_form ::placeholder {
+    color: #888;
+    opacity: 1; /* Firefox */
+}
+
+/* Estilo específico para el área de comentarios */
+.contact_form textarea {
+    resize: vertical; /* Permite al usuario ajustar la altura verticalmente */
+    min-height: 140px; /* Una altura inicial cómoda */
+}
+
+/* Estilo para el texto de privacidad */
+.contact_form .privacy-text {
+  text-align: center;
+    font-size: 0.9rem;
+    color: var(--white);
+    margin-top: -10px; /* Reduce el espacio después del textarea */
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Estilo para el enlace de "Aviso de privacidad" */
+.contact_form .privacy-text a {
+    color: var(--red); /* Un color naranja similar al de la imagen */
+    text-decoration: none;
+    font-weight: 600; /* Un poco más grueso */
+}
+
+.contact_form .privacy-text a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de envío */
+.contact_form .btn-enviar-form {
+    background-color: var(--blue); /* Color naranja/coral tomado de la imagen */
+    color: white;               /* Texto blanco */
+    border: none;               /* Sin borde */
+    padding: 12px 35px;         /* Relleno para hacerlo más grande */
+    border-radius: 30px;        /* Esquinas muy redondeadas */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.contact_form .btn-enviar-form:hover {
+    background-color: var(--red); /* Un tono de naranja un poco más oscuro */
+
+    &:hover {
+      animation: scale 2s infinite;
+    }
+}
+
+.at_home_lab .whatsapp button{
+  background-color: var(--green_whatsapp);
+  color: var(--white);
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: var(--red);
+    animation: scale 2s infinite;
+
+  }
+
+}
+
 
 /*@ Branches  */
 .branches_card_numbers {
