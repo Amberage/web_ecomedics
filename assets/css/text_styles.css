@@ -133,6 +133,23 @@
   max-height: 0;
 }
 
+.services .title_see_more {
+  display: flex; 
+  flex-wrap: nowrap;
+}
+
+.services .title_see_more p {
+  margin-bottom: 0;
+}
+
+.services ul {
+  font-size: 16px;
+}
+
+.services details ul {
+  list-style-type: square;
+}
+
 /*@ Branches  */
 .branches_card_numbers {
   color: var(--red);
