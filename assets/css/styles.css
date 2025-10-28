@@ -500,8 +500,8 @@ body {
   display: inline-block;
   font-size: 18px;
   position: fixed;
-  left: 2rem;
-  bottom: 1rem;
+  right: 2rem;
+  bottom: 2rem;
   border-radius: 50px;
   color: white;
   transition: 0.4s;
@@ -521,7 +521,7 @@ body {
   font-size: 35px;
   position: fixed;
   right: 2rem;
-  bottom: 1rem;
+  top: 5rem;
   border-radius: 50px;
   color: white;
   transition: 0.4s;
@@ -601,7 +601,7 @@ body {
   .to_top a {
     padding: 3px 10px;
     font-size: 14px;
-    left: 10px;
+    right: 10px;
 
   }
   .to_top a:hover {
