@@ -15,7 +15,7 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/.vscode')) {
     define("PREVIEW_IMG_PATH", 'https://ecomedics.mx');
     define("DB_SERVERNAME", "localhost");
     define("DB_USERNAME", "dccbbmis_root");
-    define("DB_PASSWORD", "r@U.z,juNI40j6YjC=v[*PD31O");
+    define("DB_PASSWORD", "U.z,juNI40j6YjC=v[");
     define("DB_NAME", "dccbbmis_ecomedics");
 }
 
