@@ -12,11 +12,11 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/.vscode')) {
 } else {
     //* Entorno de producción
     define("ROOT_PATH", dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'ecomedic');
-    define("PREVIEW_IMG_PATH", 'https://debug.sistemas-valledechalco.gob.mx');
+    define("PREVIEW_IMG_PATH", 'https://ecomedics.mx');
     define("DB_SERVERNAME", "localhost");
-    define("DB_USERNAME", "amberag1_super_root");
-    define("DB_PASSWORD", "r@kHaY0FTQ76*PD31O");
-    define("DB_NAME", "amberag1_ecomedics");
+    define("DB_USERNAME", "dccbbmis_root");
+    define("DB_PASSWORD", "r@U.z,juNI40j6YjC=v[*PD31O");
+    define("DB_NAME", "dccbbmis_ecomedics");
 }
 
 //? Directorios
